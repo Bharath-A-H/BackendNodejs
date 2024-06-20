@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/styles/admin-dashboard.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #575757;
+            padding-left: 10px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Courses</a></li>
+                <li><a href="#">Manage Users</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <h3>Welcome, Admin</h3>
+                <p>Use this dashboard to manage courses, users, and view platform statistics.</p>
+            </div>
+            <div class="card">
+                <h3>Manage Courses</h3>
+                <p><a href="#">View all courses</a> | <a href="#">Add new course</a></p>
+            </div>
+            <div class="card">
+                <h3>Manage Users</h3>
+                <p><a href="#">View all users</a> | <a href="#">Add new user</a></p>
+            </div>
+            <div class="card">
+                <h3>Platform Statistics</h3>
+                <p>Number of Courses: 120</p>
+                <p>Number of Users: 3500</p>
+                <p>Active Users: 2000</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
